@@ -12,10 +12,16 @@ interface ImageDisplayProps {
 export function ImageDisplay({ type, isActive }: ImageDisplayProps) {
   // 모든 이미지를 동일하게 /result.png에서 가져옴
   const images = [
-    "/result_0.png",
-    "/result_90.png",
-    "/result_180.png",
-    "/result_270.png"
+    "/Shaft_0도.png",
+    "/Shaft_90도.png",
+    "/Shaft_180도.png",
+    "/Shaft_270도.png"
+  ];
+  const imagesSam = [
+    "/Shaft_0도_SAM.png",
+    "/Shaft_90도_SAM.png",
+    "/Shaft_180도_SAM.png",
+    "/Shaft_270도_SAM.png"
   ];
   const label = type === "tube" ? "TUBE SIDE VIEW"
     : type === "shaft" ? "SHAFT SIDE VIEW"
@@ -138,12 +144,18 @@ export function ImageDisplay({ type, isActive }: ImageDisplayProps) {
       </CardHeader>
       <CardContent>
         <div className="flex flex-col gap-8">
-          <div className="flex items-center justify-center h-[480px] bg-black rounded">
+          <div className="flex items-center justify-center h-[480px] bg-gray rounded">
             <img
               src={images[activeRotateIdx]}
               alt={label}
               className="object-contain max-h-full max-w-full rounded"
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "50%", height: "100%" }}
+            />
+            <img
+              src={imagesSam[activeRotateIdx]}
+              alt={label}
+              className="object-contain max-h-full max-w-full rounded"
+              style={{ width: "50%", height: "100%" }}
             />
           </div>
         </div>
