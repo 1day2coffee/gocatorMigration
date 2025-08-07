@@ -12,16 +12,16 @@ interface ImageDisplayProps {
 export function ImageDisplay({ type, isActive }: ImageDisplayProps) {
   // 모든 이미지를 동일하게 /result.png에서 가져옴
   const images = [
-    "/Shaft_0도.png",
-    "/Shaft_90도.png",
-    "/Shaft_180도.png",
-    "/Shaft_270도.png"
+    "/Tube0도_full_mask.png",
+    "/Tube90도_full_mask.png",
+    "/Tube180도_full_mask.png",
+    "/Tube270도_full_mask.png"
   ];
   const imagesSam = [
-    "/Shaft_0도_SAM.png",
-    "/Shaft_90도_SAM.png",
-    "/Shaft_180도_SAM.png",
-    "/Shaft_270도_SAM.png"
+    "/Tube0도_SAM.png",
+    "/Tube90도_SAM.png",
+    "/Tube180도_SAM.png",
+    "/Tube270도_SAM.png"
   ];
   const label = type === "tube" ? "TUBE SIDE VIEW"
     : type === "shaft" ? "SHAFT SIDE VIEW"
@@ -57,7 +57,7 @@ export function ImageDisplay({ type, isActive }: ImageDisplayProps) {
               </h4>
               <div className="flex justify-between gap-4">
 
-                {images.map((src, idx) => (
+                {imagesSam.map((src, idx) => (
                   <div key={idx} className="flex-1 flex items-center justify-center">
                     <img
                       src={src}
@@ -82,7 +82,7 @@ export function ImageDisplay({ type, isActive }: ImageDisplayProps) {
                 SHAFT SIDE VIEW
               </h4>
               <div className="flex justify-between gap-4">
-                {images.map((src, idx) => (
+                {imagesSam.map((src, idx) => (
                   <div key={idx} className="flex-1 flex items-center justify-center">
                     <img
                       src={src}
@@ -146,13 +146,13 @@ export function ImageDisplay({ type, isActive }: ImageDisplayProps) {
         <div className="flex flex-col gap-8">
           <div className="flex items-center justify-center h-[480px] bg-gray rounded">
             <img
-              src={images[activeRotateIdx]}
+              src={imagesSam[activeRotateIdx]}
               alt={label}
               className="object-contain max-h-full max-w-full rounded"
               style={{ width: "50%", height: "100%" }}
             />
             <img
-              src={imagesSam[activeRotateIdx]}
+              src={images[activeRotateIdx]}
               alt={label}
               className="object-contain max-h-full max-w-full rounded"
               style={{ width: "50%", height: "100%" }}
