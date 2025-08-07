@@ -193,28 +193,28 @@ export function InspectionPanel({ title, type, isActive, onStatusChange }: Inspe
                   <div className="text-slate-400 text-center">Staking4</div>
 
                   {/* 2행: 깊이 */}
-                  <div className="text-slate-400 text-center">깊이 (Depth)</div>
+                  <div className="text-slate-400 text-center">Depth</div>
                   <div className="text-white text-center" title={face.staking1.depth.toFixed(3)}>{face.staking1.depth.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking2.depth.toFixed(3)}>{face.staking2.depth.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking3.depth.toFixed(3)}>{face.staking3.depth.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking4.depth.toFixed(3)}>{face.staking4.depth.toFixed(3)}</div>
 
                   {/* 3행: 가로폭 */}
-                  <div className="text-slate-400 text-center">가로폭 (Width)</div>
+                  <div className="text-slate-400 text-center">Width</div>
                   <div className="text-white text-center" title={face.staking1.width.toFixed(3)}>{face.staking1.width.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking2.width.toFixed(3)}>{face.staking2.width.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking3.width.toFixed(3)}>{face.staking3.width.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking4.width.toFixed(3)}>{face.staking4.width.toFixed(3)}</div>
 
                   {/* 4행: 세로폭 */}
-                  <div className="text-slate-400 text-center">세로폭 (Height)</div>
+                  <div className="text-slate-400 text-center">Height</div>
                   <div className="text-white text-center" title={face.staking1.height.toFixed(3)}>{face.staking1.height.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking2.height.toFixed(3)}>{face.staking2.height.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking3.height.toFixed(3)}>{face.staking3.height.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking4.height.toFixed(3)}>{face.staking4.height.toFixed(3)}</div>
 
                   {/* 5행: 체적 */}
-                  <div className="text-slate-400 text-center">체적 (Volume)</div>
+                  <div className="text-slate-400 text-center">Volume</div>
                   <div className="text-white text-center" title={face.staking1.volume.toFixed(3)}>{face.staking1.volume.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking2.volume.toFixed(3)}>{face.staking2.volume.toFixed(3)}</div>
                   <div className="text-white text-center" title={face.staking3.volume.toFixed(3)}>{face.staking3.volume.toFixed(3)}</div>
