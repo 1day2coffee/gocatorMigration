@@ -13,7 +13,7 @@ export function Header() {
                         <div className="flex items-center space-x-4">
                             <div className="flex items-center space-x-2">
                                 <img className="h-24 w-24" src="product_logo.png" />
-                                <h1 className="text-lg text-white center">3D Vision Quality Checking System</h1>
+                                <h1 className="text-lg text-white center">3D GenAI Anomaly Detection Solution</h1>
                             </div>
                             {/* <Camera className="h-8 w-8 text-blue-400" /> */}
                             {/* <Badge variant="secondary" className="bg-green-500/10 text-green-400 border-green-500/20 hover:bg-green-500/10">
